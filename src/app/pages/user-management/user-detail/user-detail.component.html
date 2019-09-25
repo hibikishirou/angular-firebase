@@ -1,0 +1,19 @@
+<mat-card>
+  <form name="frm" [formGroup]="frm" class="w-100-p" fxLayout="column">
+    <div formGroupName="profile" fxLayout="column" class="space-around center">
+      <mat-form-field>
+        <input formControlName="first" matInput placeholder="First">
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="last" matInput placeholder="Last">
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="born" matInput placeholder="born">
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="number" matInput placeholder="number">
+      </mat-form-field>
+      <button mat-button (click)="saveUser()">Save</button>
+    </div>
+  </form>
+</mat-card>
